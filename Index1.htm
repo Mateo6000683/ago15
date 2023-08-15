@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <p size="60">Clase del 15 de agosto 2023</p>
+    <p> Transformacion....... Translacion </p>
+</head>
+<body>
+    <script> 
+    function Guardar() {
+        let vo = document.getElementById("Vo").value;
+        alert("Tus numeros son:"+vo);
+    }
+    function Guardar1(){
+        let Vt = document.getElementById("Vt").value;
+        alert("Tus numeros son:"+Vt);
+    }
+    function sum(Array1,array2)
+{
+    return Array1.map(function (num ,idx){
+        return num + array2[idx];
+     })
+}    
+function byId(id)  
+{
+    return document.getElementById(sid).value;
+}
+    // funcion con delimitador 
+    function strarr2num(strarr, limitador)
+{
+        arrn=strarr.slip("limitador")
+        arrn=[]; // crea array vacio 
+        arrs.forEach((x) =>{
+            arrn.push(number(x))
+        });
+        return arrn;
+}
+    function Translacion() 
+{
+        // lee los datos de vo
+        var vo = document.getElementById("Vo").value;
+        vo = strarr2num(vo,",");
+        //alert(von[0] + von[1] + von[2]);
+        //document.getElementById("")
+   
+}
+    </script>
+     
+    <p>Vector Original 
+        <input id="Vo"/>
+        <button id="btnVo" onclick="Guardar()">Registrar</button>
+    </p>
+    <p>Vector Traslacion
+        <input size="12" id="Vt"/>
+        <button id="btnVt" onclick="Guardar1()">Registrar</button>
+    </p>
+    <p>Vector Transladado
+        <input size="13" id="Vta"/>
+        <button id="btnVa" onclick="Guardar()">Registrar</button>
+    </p>
+    <button id="Btnop" onclick="Translacion()">
+      Realizar operacion 
+    </button>
+</body>
+</html>
