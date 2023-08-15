@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <p size="60">Clase del 15 de agosto 2023</p>
+    <p> Transformacion de Translacion </p>
+</head>
+<body>
+    <script> 
+    function Guardar() {
+        let vo = document.getElementById("Vo").value;
+        alert("Tus numeros son:"+vo);
+    }
+    function Guardar1(){
+        let Vt = document.getElementById("Vt").value;
+        alert("Tus numeros son:"+Vt);
+    }
+    
+
+    function Translacion() {
+        var vo = document.getElementById("Vo").value;
+        vo = vo.split(",");
+        von = []; // crea array vacío
+        vo.forEach(elemento => {
+            von.push(Number(elemento));
+        });
+        alert(von[0] + von[1] + von[2]);
+        var Vt =document.getElementById("Vt").value;
+        Vt= Vt.split(",") //  (splip)separa los numeros 
+        Vt = []; // crea array vacío
+        Vt.forEach(elemento => { // transforma los caracteres en numeros 
+            Vtn.push(Number(elemento));
+        });
+        alert(Vtn[0] + Vtn[1] + Vtn[2]);
+    }
+    </script>
+     
+    <p>Vector Original 
+        <input id="Vo"/>
+        <button id="btnVo" onclick="Guardar()">Registrar</button>
+    </p>
+    <p>Vector Traslacion
+        <input size="12" id="Vt"/>
+        <button id="btnVt" onclick="Guardar1()">Registrar</button>
+    </p>
+    <p>Vector Transladado
+        <input size="13" id="Vta"/>
+        <button id="btnVa" onclick="Guardar()">Registrar</button>
+    </p>
+    <button id="Btnop" onclick="Translacion()">
+      Realizar operacion 
+    </button>
+</body>
+</html>
