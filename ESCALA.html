@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+    
+    <head>
+
+</div>
+<div style="color:blueviolet;"> 
+<h1 sixe=50>
+    <b>Tranformaciones </b>
+ <hr/>
+</h1>
+</div>
+
+<script defer src="https://app.embed.im/snow.js"></script>
+<script scr="Matrices.js">
+</script> <!--Llamamos al js-->
+</head>
+<body>
+    <p>
+        <h1 size="40" style="color: rgb(11, 183, 226);">Translacion</h1>
+        <span style="color: rgb(237, 11, 19);;">Vector Original </span>
+       
+        <input id="vo" size="30"> <!-- Vector original -->
+    </p>
+   
+    <p>
+        <span style="color: rgb(237, 11, 19);">Traslación en X</span>
+        <input id="tx" size="30"> <!-- Traslación en X -->
+    </p>
+
+    <p>
+        <span style="color: rgb(237, 11, 19);">Traslación en Y</span>
+        <input id="ty" size="30"> <!-- Traslación en Y -->
+    </p>
+
+    <p>
+        <span style="color: rgb(237, 11, 19);"> Traslación en Z</span>
+        <input id="tz" size="30"> <!-- Traslación en Z -->
+    </p>
+    <p>
+        <span style="color: rgb(16, 209, 32);"> Vector Resultante</span>
+        <input id="vr_tr" size="30"> <!-- Vector resultante (Traslación) -->
+    </p>
+    <button id="btn_tr" onclick="traslacion()" style="color: blue;">Realizar traslación</button>
+    <hr/>
+
+<h1  size="40" style="color: rgb(11, 183, 226);"> Escalado</h1>
+
+    <p>
+
+        <span style="color: rgb(237, 11, 19);">Vector Original</span> 
+        <input id="voe" size="30"> <!-- Vector original (Escalado) -->
+    </p>
+    <p>
+        <span style="color: rgb(237, 11, 19);">Escalado en X</span>
+        <input id="sx" size="30"> <!-- Escalado en X -->
+    </p>
+    <p>
+        ><span style="color: rgb(237, 11, 19);">Escalado en y </span>
+        <input id="sy" size="30"> <!-- Escalado en Y -->
+    </p>
+    <p>
+        <span style="color: rgb(237, 11, 19);">Escalado en Z</span>
+        <input id="sz" size="30"> <!-- Escalado en Z -->
+    </p>
+    <p>
+        <span style="color: rgb(16, 209, 32);"> Vector Resultante </span> 
+        <input id="vr_sc" size="30"> <!-- Vector resultante (Escalado) -->
+    </p>
+    <button id="btn_sc" onclick="escalado()" style="color: blue;">Realizar escalado</button>
+
+    <hr/>
+
+    <h1 size="40" style="color: rgb(11, 183, 226);">Rotacion</h1>
+    <p>
+        <span style="color: rgb(237, 11, 19);"> Vector Original </span> 
+        <input id="vor" size="30"> <!-- Vector original (Rotación) -->
+    </p>
+    <p>
+        <span style="color: rgb(237, 11, 19);">Ángulo de Rotación en X (grados)</span>
+        <input id="angleX" size="30"> <!-- Ángulo de Rotación en X -->
+    </p>
+    <p>
+        <span style="color: rgb(237, 11, 19);">Ángulo de Rotación en Y (grados)</span>
+        <input id="angleY" size="30"> <!-- Ángulo de Rotación en Y -->
+    </p>
+    <p>
+        <span style="color: rgb(237, 11, 19);">Ángulo de Rotación en Z (grados)</span>
+        <input id="angleZ" size="30"> <!-- Ángulo de Rotación en Z -->
+    </p>
+    <p>
+        <span style="color: rgb(16, 209, 32);">Vector Resultante</span>
+        <input id="vr_rot" size="30"> <!-- Vector resultante (Rotación) -->
+    </p>
+    <button id="btn_rot" onclick="rotacion()" style="color:blue;">Realizar rotación</button>
+</body>
+    
+   
+</body>
+
+</html>
